@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ljubavni kalkulator</title>
+  
+ 
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+ 
+
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<div class="container">
+			<div class="profile">
+				
+				<button class="profile__avatar" id="toggleProfile">
+					<p><b>Izračunajte svoju ljubav</b><p>
+					<img src="slika.png" alt="Avatar" />
+				</button>
+				<div class="profile__form">
+					<div class="profile__fields">
+						<div class="field">
+							<input type="text" id="ona" class="input" required pattern=.*\S.* />
+							<label for="ona" class="label">Njezino ime</label>
+						</div>
+						<div class="field">
+							<input type="text" id="on" class="input" required pattern=.*\S.* />
+							<label for="on" class="label">Njegovo ime</label>
+						</div>
+						<div class="profile__footer">
+							<span id="poruka">
+								
+							</span>
+							<button class="btn" id="izracunaj">
+								Klikni i saznaj!
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<ul id="rezultati">
+		</ul>
+		 <canvas id="canvas"></canvas>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		
+		<script src="js/ljubav.js"></script>
+		<script src="js/index.js"></script>
+    <script  src="js/srca.js"></script>
+
+</body>
+</html>
